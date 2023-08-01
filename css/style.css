@@ -58,10 +58,7 @@ h3 {
   margin: 0;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -96,11 +93,12 @@ h3 {
 
 /* Container */
 .container {
-  max-width: 428px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  height: 70px;
 }
 
 .container-what-are-we-doing {
@@ -245,9 +243,42 @@ h3 {
   align-items: center;
 }
 
+/* --------MENU------- */
+.menu-open-button {
+  min-height: 64px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+    fill: var(--title-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-text-color);
+}
+
+.menu-container-button {
+
+}
+
+.menu-close-button {
+  
+}
+
 /* Site Nav */
 .site-nav {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -261,6 +292,12 @@ h3 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
+}
+
+.navigation {
+  /* display: flex; */
+  /* align-items: center; */
+  flex: 1;
 }
 
 .site-nav-link:hover,
@@ -288,10 +325,10 @@ h3 {
   bottom: -1px;
   display: block;
   width: 100%;
-  height:значення ;
-  border-radius:значення ;
+  height: значення;
+  border-radius: значення;
   background-color: значення;
-  }
+}
 
 .site-nav-link {
   color: var(--bcg-button-color);
@@ -301,6 +338,7 @@ h3 {
 .auth-nav {
   font-style: normal;
   margin-left: auto;
+  display: none;
 }
 
 .auth-nav .link {
@@ -749,13 +787,13 @@ button {
   letter-spacing: 0.04em;
   text-align: center;
   border: 1px solid var(--border-color);
- 
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
- .filter-button:hover,
- .filter-button:focus {
+.filter-button:hover,
+.filter-button:focus {
   color: var(--white-text-color);
   background-color: var(--bcg-button-color);
   border: 1px solid transparent;
@@ -971,15 +1009,15 @@ button {
   width: 100%;
   height: 120px;
   font-size: 12px;
-  line-height: 1.17; 
-  letter-spacing: 0.04em; 
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px; 
+  border-radius: 4px;
   background-color: transparent;
-  padding: 8px 16px; 
+  padding: 8px 16px;
   outline: transparent;
-  resize: none; 
+  resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -992,15 +1030,15 @@ button {
 }
 
 .modal-span {
-  width: 16px; 
+  width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px; 
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
-  justify-content: center; 
-  fill: transparent; 
+  justify-content: center;
+  fill: transparent;
 }
 
 .privacy-link {
@@ -1011,7 +1049,7 @@ button {
   min-width: 169px;
   height: 56px;
   font-weight: 500;
-  line-height: 1.5 ;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white-text-color);
   cursor: pointer;
@@ -1028,7 +1066,7 @@ button {
 /* SUBSCRIBE */
 
 .footer-form-text {
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1044,23 +1082,23 @@ button {
   width: 264px;
   height: 40px;
   border: 1px solid var(--white-text-color);
-  background-color: transparent; 
-  font-size: 12px; 
+  background-color: transparent;
+  font-size: 12px;
   line-height: 1.5;
-  letter-spacing: 0.04em; 
+  letter-spacing: 0.04em;
   padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px; 
+  border-radius: 4px;
   color: var(--white-text-color);
 }
 
 .subscribe-button {
-  min-width: 165px; 
+  min-width: 165px;
   height: 40px;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-icon {

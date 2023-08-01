@@ -1,8 +1,28 @@
+/*-------------- MOBILE ------------*/
+
+
+
+/*-------------- TABLET ------------*/
+
 @media screen and (min-width: 768px) {
     .container {
       max-width: 768px;
     }
+
+   .site-nav {
+    display: flex;
+   }
+
+   .auth-nav {
+    display: flex;
+   }
+
+   .menu-open-button {
+    display: none;
+   }
   }
+
+  /*-------------- PC ---------------*/
 
   @media screen and (min-width: 1158px) {
     .container {

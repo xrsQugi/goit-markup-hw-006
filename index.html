@@ -20,13 +20,26 @@
   <header class="page-header">
     <div class="container">
       <nav class="navigation">
-        <a href="./index.html" class="logo link">WEB<span class="header-logo-span">Studio</span></a>
+      <a href="./index.html" class="logo link">WEB<span class="header-logo-span">Studio</span></a>
+      
+        
         <ul class="site-nav list">
           <li><a href="./index.html" class="link  current  site-nav-link">Studio</a></li>
           <li><a href="./portfolio.html" class="link  site-nav-link">Portfolio</a></li>
           <li><a href="" class="link site-nav-link">Contacts</a></li>
         </ul>
       </nav>
+
+      <button
+          class="menu-open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+
       <address class="auth-nav">
         <ul class="auth-list list">
           <li>
@@ -37,7 +50,15 @@
           </li>
         </ul>
       </address>
+      
     </div>
+
+    <div class="mobile-menu">
+      <div class="menu-container container">
+        <button class="menu-close-button">x</button>
+      </div>
+    </div>
+
   </header>
 
   <!-- <main> -->
