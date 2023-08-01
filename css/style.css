@@ -404,7 +404,8 @@ h3 {
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
   padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-bottom: 188px; */
+  padding-bottom: 280px;
   max-width: 1440px;
   margin: 0 auto;
 }
