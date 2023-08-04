@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
@@ -17,40 +23,123 @@
     <header class="page-header">
       <div class="container">
         <nav class="navigation">
-          <a href="./index.html" class="logo link">WEB<span class="header-logo-span">Studio</span></a>
+          <a href="./index.html" class="logo link"
+            >WEB<span class="header-logo-span">Studio</span></a
+          >
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current site-nav-link">Studio</a></li>
-            <li><a href="./portfolio.html" class="link site-nav-link">Portfolio</a></li>
+            <li>
+              <a href="./index.html" class="link current site-nav-link"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link site-nav-link"
+                >Portfolio</a
+              >
+            </li>
             <li><a href="#footer" class="link site-nav-link">Contacts</a></li>
           </ul>
         </nav>
         <address class="auth-nav">
           <ul class="auth-list list">
             <li>
-              <a href="mailto:info@devstudio.com" class="auth link">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="auth link"
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a href="tel:+110001111111" class="auth link">+11 (000) 111-11-11</a>
+              <a href="tel:+110001111111" class="auth link"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
-        <button class="menu-open-button" js-open-menu>
+        <button
+          class="menu-open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-open-icon" width="32" height="22">
             <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <!-- <div class="menu-btn">
-          <span class="menu-btn-line"></span>
-          <span class="menu-btn-line"></span>
-          <span class="menu-btn-line"></span>
-        </div> -->
-      </div>
-      <div class="mobile-menu">
-        <div class="menu-container container">
-          <button class="menu-close-button" js-close-menu>x</button>
+
+        <!-- Menu mobile -->
+        <div class="menu-container js-menu-container">
+          <button class="menu-close-btn js-close-menu">
+            <svg class="menu-icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="menu-navigation">
+            <a href="./index.html" active>Studio</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#footer">Contacts</a>
+          </div>
+          <div class="menu-contacts">
+            <div class="menu-contacts-item">
+              <a href="tel: +11 (000) 111-11-11">+11 (000) 111-11-11</a>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="menu-soc-media">
+              <ul class="social-list list">
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Twitter"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Facebook"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      
     </header>
     <main>
       <section class="section-hero">
@@ -121,13 +210,31 @@
         <div class="container-what-are-we-doing">
           <ul class="photo list">
             <li class="list-img">
-              <img class="images" src="./images/photo-main1.jpg" alt="computer" width="360" height="300" />
+              <img
+                class="images"
+                src="./images/photo-main1.jpg"
+                alt="computer"
+                width="360"
+                height="300"
+              />
             </li>
             <li class="list-img">
-              <img class="images" src="./images/photo-main2.jpg" alt="phone" width="360" height="300" />
+              <img
+                class="images"
+                src="./images/photo-main2.jpg"
+                alt="phone"
+                width="360"
+                height="300"
+              />
             </li>
             <li class="list-img">
-              <img class="images" src="./images/photo-main3.jpg" alt="phone and computer" width="360" height="300" />
+              <img
+                class="images"
+                src="./images/photo-main3.jpg"
+                alt="phone and computer"
+                width="360"
+                height="300"
+              />
             </li>
           </ul>
         </div>
@@ -138,7 +245,13 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team list">
             <li class="our-team-list">
-              <img class="images" src="./images/photo-team1.jpg" alt="Product Designer" width="264" height="260" />
+              <img
+                class="images"
+                src="./images/photo-team1.jpg"
+                alt="Product Designer"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
@@ -206,7 +319,13 @@
             </li>
 
             <li class="our-team-list">
-              <img class="images" src="./images/photo-team2.jpg" alt="Frontend Developer" width="264" height="260" />
+              <img
+                class="images"
+                src="./images/photo-team2.jpg"
+                alt="Frontend Developer"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
@@ -274,7 +393,13 @@
             </li>
 
             <li class="our-team-list">
-              <img class="images" src="./images/photo-team3.jpg" alt="Marketing" width="264" height="260" />
+              <img
+                class="images"
+                src="./images/photo-team3.jpg"
+                alt="Marketing"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -342,7 +467,13 @@
             </li>
 
             <li class="our-team-list">
-              <img class="images" src="./images/photo-team4.jpg" alt="UI Designer" width="264" height="260" />
+              <img
+                class="images"
+                src="./images/photo-team4.jpg"
+                alt="UI Designer"
+                width="264"
+                height="260"
+              />
               <div class="container-team">
                 <h3 class="title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -502,7 +633,9 @@
     <footer class="footer works" id="footer">
       <div class="container-footer">
         <div class="container-footer-info">
-          <a href="./index.html" class="footer-logo link" >WEB<span class="footer-logo-span">Studio</span></a>
+          <a href="./index.html" class="footer-logo link"
+            >WEB<span class="footer-logo-span">Studio</span></a
+          >
           <p class="text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -660,7 +793,7 @@
                   <use href=""></use>
                 </svg>
               </span> -->
-              <input type="checkbox">
+              <input type="checkbox" />
               I accept the terms and conditions of the
               <a class="privacy-link link" href="#">Privacy Policy</a>
             </label>
@@ -669,77 +802,7 @@
         </form>
       </div>
     </div>
-    <!-- Menu mobile -->
-    <!-- <div class="menu">
-      <div class="menu-navigation">
-          <a href="./index.html" active>Studio</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="#footer-contacts">Contacts</a>
-      </div>
-      <div class="menu-contacts">
-          <div class="menu-contacts-item">
-              <a href="tel: +38 096 111 11 11">+38 096 111 11 11</a>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </div>
-          <div class="menu-soc-media">
-            <ul class="social-list list">
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Instagram"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Twitter"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Facebook"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Linkedin"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </div> -->
     <script src="./js/modal.js"></script>
-    <script src="./js//burger.js"></script>
+    <script src="./js/mobile.menu.js"></script>
   </body>
 </html>

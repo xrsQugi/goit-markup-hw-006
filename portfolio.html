@@ -7,15 +7,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
@@ -29,7 +22,9 @@
           >
           <ul class="site-nav list">
             <li>
-              <a href="./index.html" class="link site-nav-link">Studio</a>
+              <a href="./index.html" class="link site-nav-link"
+                >Studio</a
+              >
             </li>
             <li>
               <a href="./portfolio.html" class="link current site-nav-link"
@@ -53,20 +48,90 @@
             </li>
           </ul>
         </address>
-        <button class="menu-open-button" js-open-menu>
+        <button
+          class="menu-open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-open-icon" width="32" height="22">
             <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <!-- <div class="menu-btn">
-        <span class="menu-btn-line"></span>
-        <span class="menu-btn-line"></span>
-        <span class="menu-btn-line"></span>
-      </div> -->
-      </div>
-      <div class="mobile-menu">
-        <div class="menu-container container">
-          <button class="menu-close-button" js-close-menu>x</button>
+        
+        <!-- Menu mobile -->
+        <div class="menu-container js-menu-container">
+          <button class="menu-close-btn js-close-menu">
+            <svg class="menu-icon" width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="menu-navigation">
+            <a href="./index.html" active>Studio</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="#footer">Contacts</a>
+          </div>
+          <div class="menu-contacts">
+            <div class="menu-contacts-item">
+              <a href="tel: +11 (000) 111-11-11">+11 (000) 111-11-11</a>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="menu-soc-media">
+              <ul class="social-list list">
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Twitter"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Facebook"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-li">
+                  <a
+                    href=""
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noopener no-referrer"
+                    class="social-link"
+                  >
+                    <svg class="social-svg" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -377,76 +442,6 @@
         </div>
       </div>
     </footer>
-    <!-- Menu mobile -->
-    <!-- <div class="menu">
-      <div class="menu-navigation">
-          <a href="./index.html" active>Studio</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="#footer-contacts">Contacts</a>
-      </div>
-      <div class="menu-contacts">
-          <div class="menu-contacts-item">
-              <a href="tel: +38 096 111 11 11">+38 096 111 11 11</a>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </div>
-          <div class="menu-soc-media">
-            <ul class="social-list list">
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Instagram"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Twitter"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Facebook"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a
-                  href=""
-                  aria-label="Linkedin"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  class="social-link"
-                >
-                  <svg class="social-svg" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </div> -->
     <div class="container-modal is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
@@ -457,5 +452,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.menu.js"></script>
   </body>
 </html>
