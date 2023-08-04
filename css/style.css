@@ -30,7 +30,6 @@
   flex-direction: column;
   background: var(--white-text-color);
   color: var(--primary-text-color);
-
   font-family: Roboto, sans-serif;
   text-decoration: none;
 }
